@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-menu">
+        <div>
+          <img src="images/logo.png" alt="lennin" />
+        </div>
+        <div class="page">
+          <a href="#">Home</a>
+          <a href="#">Sách</a>
+          <a href="#">Thư viện</a>
+          <a href="#">Giới thiệu</a>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="login/login.html">
+            <i class="fa-solid fa-user" id="users"></i>
+          </a>
+          <div class="lines"></div>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+      </div>
+<!-- 
+      <div class="main-content">
+        <div class="selector">
+          <a href="#" id="highlight">Deck</a>
+          <a href="#">Accessories</a>
+          <a href="#">Clothing</a>
+          <a href="#">S/S 2022</a>
+          <a href="#">S/S 2021</a>
+          <a href="#">S/S 2020</a>
+          <a href="#">S/S 2019</a>
+          <a href="#">Tất cả</a>
+        </div> -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Cate1')">The loai 1</button>
+            <button class="tablinks" onclick="openCity(event, 'Cate2')">The loai 2</button>
+            <button class="tablinks" onclick="openCity(event, 'Cate3')">The loai 3</button>
+          </div>
+        <div id="Cate1"  class="tabcontent">
+       
+        </div>
+        <div id="Cate2"  class="tabcontent">
+          
+        </div>
+
+          <div id="Cate3"  class="tabcontent">
+            <div class="grid-x5">
+              <div class="book-card">
+                <div class="book-card__image">
+                  <img
+                    src="http://www.easternbiotech.com/beta/wp-content/uploads/2016/03/Child-Wellness-Profile.jpg"
+                    alt=""
+                  />
+                </div>
+  
+                <h4 class="book-title">Category 3</h4>
+  
+                <p class="book-copy">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <a href="" class="book-link">view</a>
+              </div>
+            </div>
+          </div>
+   
+      </div>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "flex";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+    <script src="app.js"></script>
+  </body>
+</html>

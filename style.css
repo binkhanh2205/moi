@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#highlight {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.top-menu {
+  background: rgb(96, 93, 93);
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 9em;
+  grid-row-gap: 1em;
+  padding: 14px 64px;
+  margin-bottom: 36px;
+}
+
+.top-menu .page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.top-menu .page a {
+  color: white;
+}
+
+.top-menu .icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top-menu .icon a {
+  text-decoration: none;
+  color: white;
+}
+
+.top-menu .icon i {
+  padding: 0 16px;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.lines {
+  border-right: 1px solid white;
+  height: 36px;
+}
+
+.main-content .selector {
+  padding: 16px 0px;
+  text-align: center;
+}
+
+.main-content .selector a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #989898;
+  padding: 12px 22px;
+}
+
+#Cate1 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  padding: 2.5em 0;
+}
+#Cate2 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  padding: 2.5em 0;
+}
+#products {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  padding: 2.5em 0;
+}
+#Cate3 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  padding: 2.5em 0;
+}
+
+.grid-x5 {
+  /*   width: 20%; */
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+
+  margin: 6px;
+}
+
+.book-card {
+  width: 170px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  padding-bottom: 15px;
+  vertical-align: top;
+
+  border: 1px solid #b7b7b7;
+}
+
+.book-card__image {
+  width: 100%;
+  height: 170px;
+}
+
+.book-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-title {
+  margin: 0;
+  padding: 15px;
+}
+
+.book-copy {
+  margin: 0;
+  padding: 0 15px;
+  font-size: 11px;
+  color: #b7b7b7;
+}
+
+.book-link {
+  margin-left: 15px;
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #b7b7b7;
+  padding: 3px 12px;
+  color: #b7b7b7;
+  border-radius: 5px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
